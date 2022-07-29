@@ -50,7 +50,7 @@ export function Projects() {
             {" "}
             <SwiperBox
               isVideo={true}
-              img="portfolio.mp4"
+              img="video-portfolio.mp4"
               title="Personal Portfolio Website"
               subTitle="My Personal Portfolio Website made using React, HTML, CSS, TS and JS. Styles with styled-components."
               link=""

@@ -53,7 +53,7 @@ export function Home() {
             className='img-profile'
             /> : ''}
             <a href="#contact" style={{ textDecoration: "none" }}>
-              <ButtonBox title="Contact me" icon="send.png" type="button" />
+              <ButtonBox title="Contact me" icon="AiOutlineSend" type="button" />
             </a>
             {windowWidth >= 768 ? <ScrollDown href="#about" className="mouse">
               <BsMouse className="icon"/>

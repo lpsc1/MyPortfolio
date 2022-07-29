@@ -13,6 +13,14 @@ export const Button = styled.button`
     transition: 0.1s;
     transform: scale(1.05);
   }
+  .icon {
+    width: 14px;
+    height: 14px;
+    color: var(--primary);
+  }
+  p {
+    color: var(--primary);
+  }
 `;
 export const A = styled.a`
   text-decoration: none;

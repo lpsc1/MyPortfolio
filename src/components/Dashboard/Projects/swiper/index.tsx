@@ -21,7 +21,7 @@ export function SwiperBox({ img, title, subTitle, link, isVideo }: SwiperBoxProp
         <h2>{title}</h2>
         <p style={{ marginBottom: 8 }}>{subTitle}</p>
         <a href={link} target={"_blank"} style={{ textDecoration: "none" }}>
-          <ButtonBox icon="go.png" title="Check out" type="button" />
+          <ButtonBox icon="HiArrowNarrowRight" title="Check out" type="button" />
         </a>
       </SwiperContainer>
     </Container>

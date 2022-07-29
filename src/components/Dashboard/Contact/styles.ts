@@ -149,3 +149,24 @@ export const Forms = styled.div`
     resize: vertical;
   }
 `;
+export const ButtonSubmit = styled.button`
+  width: max-content;
+  align-items: center;
+  display: flex;
+  border: none;
+  gap: 0.5rem;
+  background: var(--secundary);
+  color: var(--primary);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  :hover {
+    transition: 0.1s;
+    transform: scale(1.05);
+  }
+  .icon {
+    width: 14px;
+    height: 14px;
+    color: var(--primary);
+  }
+  `;
+

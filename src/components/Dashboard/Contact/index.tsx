@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ScreenContext } from "../../../context";
+import {AiOutlineSend} from 'react-icons/ai'
 import { ButtonBox } from "../../ButtonBox";
 import { Box } from "../About/styles";
 import { SocialCard } from "./socialCard";
@@ -10,6 +11,7 @@ import {
   Content,
   Forms,
   Title,
+  ButtonSubmit,
 } from "./styles";
 
 interface isCompleteProps {
@@ -112,7 +114,11 @@ export function ContactMe() {
     }
   }
   return (
-    <Box id="contact" onMouseOverCapture={() => handleToggleFocus()} onTouchStartCapture={() => handleToggleFocus()}>
+    <Box
+      id="contact"
+      onMouseOverCapture={() => handleToggleFocus()}
+      onTouchStartCapture={() => handleToggleFocus()}
+    >
       <Container windowWidth={windowWidth}>
         <Title windowWidth={windowWidth}>
           <h1>Contact Me</h1>
@@ -143,131 +149,136 @@ export function ContactMe() {
             />
           </CardsContainer>
           <FormContainer
-            name="contact-me"
+            name="contact me"
             method="POST"
             data-netlify="true"
             windowWidth={windowWidth}
             isComplete={isComplete}
             isFocusContent={isFocusContent}
           >
-            <input type="hidden" name="message-to-me" value="contact-me"/>
+            <input type="hidden" name="message-to-me" value="contact me" />
             <Forms className="nameInput">
-              <label htmlFor="name" >Name</label>
-              <input
-                required
-                id="name"
-                name="name"
-                type={"text"}
-                className="name"
-                onFocus={() =>
-                  setIsFocusContent({
-                    isNameFocus: true,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onBlur={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onChange={(value) =>
-                  handleChangeInput(value.target.value, "name")
-                }
-              />
+              <label>
+                Name
+                <br />
+                <input
+                  required
+                  name="name"
+                  type="text"
+                  className="name"
+                  onFocus={() =>
+                    setIsFocusContent({
+                      isNameFocus: true,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onBlur={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onChange={(value) =>
+                    handleChangeInput(value.target.value, "name")
+                  }
+                />
+              </label>
             </Forms>
             <Forms className="emailInput">
-              <label htmlFor="email" >Email</label>
-              <input
-                required
-                id="email"
-                name="email"
-                type={"email"}
-                className="email"
-                onFocus={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: true,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onBlur={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onChange={(value) =>
-                  handleChangeInput(value.target.value, "email")
-                }
-              ></input>
+              <label>
+                Email<br />
+                <input
+                  required
+                  name="email"
+                  type="email"
+                  className="email"
+                  onFocus={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: true,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onBlur={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onChange={(value) =>
+                    handleChangeInput(value.target.value, "email")
+                  }
+                />
+              </label>
             </Forms>
             <Forms className="subjectInput">
-              <label htmlFor="subject" >Subject</label>
-              <input
-                required
-                id="subject"
-                name="subject"
-                type={"text"}
-                className="subjectInput"
-                onFocus={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: true,
-                    isMessageFocus: false,
-                  })
-                }
-                onBlur={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onChange={(value) =>
-                  handleChangeInput(value.target.value, "subject")
-                }
-              ></input>
+              <label>
+                Subject<br />
+                <input
+                  required
+                  name="subject"
+                  type="text"
+                  className="subjectInput"
+                  onFocus={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: true,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onBlur={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onChange={(value) =>
+                    handleChangeInput(value.target.value, "subject")
+                  }
+                />
+              </label>
             </Forms>
             <Forms className="messageInput">
-              <label htmlFor="message" >Message</label>
-              <textarea
-                required
-                id="message"
-                name="message"
-                minLength={1}
-                className="textarea"
-                onFocus={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: true,
-                  })
-                }
-                onBlur={() =>
-                  setIsFocusContent({
-                    isNameFocus: false,
-                    isEmailFocus: false,
-                    isSubjectFocus: false,
-                    isMessageFocus: false,
-                  })
-                }
-                onChange={(value) =>
-                  handleChangeInput(value.target.value, "message")
-                }
-              ></textarea>
+              <label>
+                Message<br />
+                <textarea
+                  required
+                  name="message"
+                  minLength={1}
+                  className="textarea"
+                  onFocus={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: true,
+                    })
+                  }
+                  onBlur={() =>
+                    setIsFocusContent({
+                      isNameFocus: false,
+                      isEmailFocus: false,
+                      isSubjectFocus: false,
+                      isMessageFocus: false,
+                    })
+                  }
+                  onChange={(value) =>
+                    handleChangeInput(value.target.value, "message")
+                  }
+                />
+              </label>
             </Forms>
-            <ButtonBox icon="send.png" type="submit" title="Submit" />
+            <ButtonSubmit type="submit">Submit <AiOutlineSend className="icon"/></ButtonSubmit>
           </FormContainer>
         </Content>
       </Container>
