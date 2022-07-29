@@ -6247,6 +6247,11 @@
   "resolved" "https://registry.npmjs.org/node-int64/-/node-int64-0.4.0.tgz"
   "version" "0.4.0"
 
+"node-options@^0.0.7":
+  "integrity" "sha512-A+Zoq9JXgmtLWU0L/b4zcn83PJRD6BdOx9a4kQRM8IrKSCVmcn8/BwXpfM3GA7fdjcluB83npqLIiOqqrCswQw=="
+  "resolved" "https://registry.npmjs.org/node-options/-/node-options-0.0.7.tgz"
+  "version" "0.0.7"
+
 "node-releases@^2.0.6":
   "integrity" "sha512-PiVXnNuFm5+iYkLBNeq5211hvO38y63T0i2KKh2KnUs3RpzJ+JtODFjkD8yjLwnDkTYF1eKXheUwdssR+NRZdg=="
   "resolved" "https://registry.npmjs.org/node-releases/-/node-releases-2.0.6.tgz"
