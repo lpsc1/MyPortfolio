@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import { ScreenContext } from "../../../context";
-import {AiOutlineSend} from 'react-icons/ai'
-import { ButtonBox } from "../../ButtonBox";
+import { AiOutlineSend } from "react-icons/ai";
 import { Box } from "../About/styles";
 import { SocialCard } from "./socialCard";
 import {
@@ -149,14 +148,17 @@ export function ContactMe() {
             />
           </CardsContainer>
           <FormContainer
-            name="contact me"
-            method="POST"
             data-netlify="true"
+            name="contact me"
+            action="https://formsubmit.co/lucascor_rtb@hotmail.com"
+            method="POST"
             windowWidth={windowWidth}
             isComplete={isComplete}
             isFocusContent={isFocusContent}
           >
             <input type="hidden" name="message-to-me" value="contact me" />
+            <input type="hidden" name="_captcha" value="false" />
+
             <Forms className="nameInput">
               <label>
                 Name
@@ -190,7 +192,8 @@ export function ContactMe() {
             </Forms>
             <Forms className="emailInput">
               <label>
-                Email<br />
+                Email
+                <br />
                 <input
                   required
                   name="email"
@@ -220,7 +223,8 @@ export function ContactMe() {
             </Forms>
             <Forms className="subjectInput">
               <label>
-                Subject<br />
+                Subject
+                <br />
                 <input
                   required
                   name="subject"
@@ -250,7 +254,8 @@ export function ContactMe() {
             </Forms>
             <Forms className="messageInput">
               <label>
-                Message<br />
+                Message
+                <br />
                 <textarea
                   required
                   name="message"
@@ -278,7 +283,9 @@ export function ContactMe() {
                 />
               </label>
             </Forms>
-            <ButtonSubmit type="submit">Submit <AiOutlineSend className="icon"/></ButtonSubmit>
+            <ButtonSubmit type="submit">
+              Submit <AiOutlineSend className="icon" />
+            </ButtonSubmit>
           </FormContainer>
         </Content>
       </Container>
