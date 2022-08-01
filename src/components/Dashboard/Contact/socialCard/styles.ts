@@ -8,13 +8,13 @@ export const Container = styled.a`
   justify-content: flex-start;
   align-items: center;
   gap: 2vh;
+   :hover{
+    transform: scale(1.02);
+  }
   .img {
     width: 35px;
     height: 35px;
     color: var(--secundary);
-    :hover {
-      transform: scale(1.1);
-    }
   }
 `;
 export const TextBox = styled.div`
