@@ -67,7 +67,7 @@ export function Header() {
               Skills
             </LinkNav>
           </a>
-          <a
+          {/* <a
             onClick={() =>
               setIsFocus({
                 isAboutFocus: false,
@@ -90,7 +90,7 @@ export function Header() {
             >
               Qualifications
             </LinkNav>
-          </a>
+          </a> */}
           <a
             onClick={() =>
               setIsFocus({

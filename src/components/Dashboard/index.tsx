@@ -16,7 +16,7 @@ export function Dashboard() {
       <Home />
       <About />
       <Skills />
-      <Qualifications />
+      {/* <Qualifications />  */}
       <Projects />
       <ContactMe />
       <Footer />

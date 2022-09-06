@@ -40,7 +40,7 @@ export const Title = styled.head<Props>`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: var(--text);
   font-size: ${({ windowWidth }) => (windowWidth < 1024 ? "16px" : "25px")};
   h5 {
