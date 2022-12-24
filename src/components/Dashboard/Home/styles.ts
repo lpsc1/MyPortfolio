@@ -13,10 +13,10 @@ export const Container = styled.div<Props>`
   align-items: center;
   margin-top: 11rem;
   margin-bottom: 1rem;
-  :hover {
+  /* :hover {
     transition: 0.5s;
     transform: ${({ windowWidth }) => windowWidth < 1024 ? "" : "scale(1.03)"};
-  }
+  } */
   border: 1px solid var(--primary);
 `;
 export const Content = styled.main<Props>`

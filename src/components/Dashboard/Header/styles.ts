@@ -15,11 +15,11 @@ export const Container = styled.header<Props>`
     text-decoration: none;
     color: var(--primary);
   }
-  :hover {
+ /*  :hover {
     transition: ease-in-out;
     transform: ${({ windowWidth }) =>
       windowWidth < 1024 ? "" : "scale(1.01)"};
-  }
+  } */
   position: fixed;
   top: 0;
   left: 0;

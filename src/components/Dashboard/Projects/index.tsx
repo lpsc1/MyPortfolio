@@ -46,6 +46,15 @@ export function Projects() {
           modules={[Navigation, Pagination, Autoplay, Mousewheel, Keyboard]}
           className="mySwiper"
         >
+           <SwiperSlide className="mySwiperSlide">
+            {" "}
+            <SwiperBox
+              img="marketeasy.png"
+              title="MarketEasy"
+              subTitle="Website mobile first that i made to help yours finances control, using React, HTML, CSS, TS and JS. Styles with styled-components."
+              link="https://marketeasy.vercel.app/"
+            />
+          </SwiperSlide>
           <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox

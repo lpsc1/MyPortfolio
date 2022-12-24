@@ -13,10 +13,10 @@ export const Container = styled.footer<Props>`
   justify-content: space-evenly;
   align-items: center;
   color: var(--primary);
-  :hover {
+  /* :hover {
     transition: 0.1s;
     transform: ${({ windowWidth }) => windowWidth < 1024 ? "" : "scale(1.03)"};
-  }
+  } */
 `;
 export const Logo = styled.div`
   display: flex;

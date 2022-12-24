@@ -13,10 +13,10 @@ export const Container = styled.section<Props>`
   align-items: center;
   color: var(--text); 
   margin-top: 8rem;
-  :hover {
+ /*  :hover {
     transition: 0.5s;
     transform: ${({ windowWidth }) =>(Number(windowWidth) < 1024 ? "" : "scale(1.03)")};
-  }
+  } */
 `;
 export const Title = styled.div<Props>`
   display: flex;
@@ -57,9 +57,9 @@ export const Skill = styled.button<Props>`
     color: var(--secundary);
     margin-right: 0.8rem;
   }
-  :hover {
+  /* :hover {
     transform: scale(1.03);
-  }
+  } */
   .libraires {
     width: 20px;
     height: 20px;

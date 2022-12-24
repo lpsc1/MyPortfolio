@@ -25,10 +25,10 @@ export const Container = styled.section<WindowProps>`
   margin-top: 6rem;
   justify-content: center;
   align-items: center;
-  :hover {
+ /*  :hover {
     transition: 0.5s;
     transform: ${({ windowWidth }) => windowWidth < 1024 ? "" : "scale(1.03)"};
-  }
+  } */
 `;
 export const Title = styled.head<WindowProps>`
   display: flex;
@@ -160,8 +160,8 @@ export const ButtonSubmit = styled.button`
   padding: 1rem;
   border-radius: 0.5rem;
   :hover {
-    transition: 0.1s;
-    transform: scale(1.05);
+    transition: ease-in-out;
+    transform: scale(1.02);
   }
   .icon {
     width: 14px;

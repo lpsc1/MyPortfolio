@@ -14,10 +14,10 @@ export const Container = styled.div<Props>`
   justify-content: center;
   align-items: center;
   margin-top: 6rem;
-  :hover {
+  /* :hover {
     transition: 0.5s;
     transform: ${({ windowWidth }) => windowWidth < 1024 ? "" : "scale(1.03)"};
-  }
+  } */
 `;
 export const Title = styled.head<Props>`
   display: flex;

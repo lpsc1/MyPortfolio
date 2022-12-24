@@ -12,10 +12,10 @@ export const Container = styled.section<Props>`
   justify-content: center;
   align-items: center;
   gap: 4vh;
-  :hover {
+  /* :hover {
     transition: all 0s ease-in-out;
     transform: ${({ windowWidth }) =>(Number(windowWidth) < 1024 ? "" : "scale(1.03)")};
-  }
+  } */
 `;
 export const SwiperContainer = styled.div`
   display: flex;
