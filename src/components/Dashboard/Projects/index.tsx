@@ -78,13 +78,43 @@ export function Projects() {
           <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox
+              isVideo={false}
+              img="Logo_drogasil.png"
+              title="Drogasil Website"
+              subTitle="Pharmacy Website that i worked using React, HTML, CSS, TS and JS. Styles with styled-components."
+              link="https://www.drogasil.com.br/"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="mySwiperSlide">
+            {" "}
+            <SwiperBox
+              isVideo={false}
+              img="drogaraia.jpeg"
+              title="Drogaraia Website"
+              subTitle="Pharmacy Website that i worked using React, HTML, CSS, TS and JS. Styles with styled-components."
+              link="https://www.drogaraia.com.br/"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="mySwiperSlide">
+            {" "}
+            <SwiperBox
+              isVideo={false}
+              img="mavielo_logo.svg"
+              title="Mavielo"
+              subTitle="Social network app that i worked using React Native, CSS, TS and JS. Styles with styled-components."
+              link="https://www.mavielo.com.br/"
+            />
+          </SwiperSlide>
+          {/* <SwiperSlide className="mySwiperSlide">
+            {" "}
+            <SwiperBox
               img="gofinances.png"
               title="App GoFinances"
               subTitle="A mobile app that i made using React Native, CSS, TS and JS. Styles with styled-components."
               link="https://github.com/lpsc1/AppGoFinances"
             />
-          </SwiperSlide>
-          <SwiperSlide className="mySwiperSlide">
+          </SwiperSlide> */}
+          {/* <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox
               img="appToDo.png"
@@ -92,8 +122,8 @@ export function Projects() {
               subTitle="A mobile app that i made using React Native, CSS, TS and JS. Styles with styled-components."
               link="https://github.com/lpsc1/AppTo.do"
             />
-          </SwiperSlide>
-          <SwiperSlide className="mySwiperSlide">
+          </SwiperSlide> */}
+          {/* <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox
               img="worldTrip.png"
@@ -101,8 +131,8 @@ export function Projects() {
               subTitle="A Website that i made using React, HTML, CSS, TS and JS. Styles with Chakra UI."
               link="https://github.com/lpsc1/world-trip"
             />
-          </SwiperSlide>
-          <SwiperSlide className="mySwiperSlide">
+          </SwiperSlide> */}
+          {/* <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox
               img="dashgo.png"
@@ -110,8 +140,8 @@ export function Projects() {
               subTitle="A Website that i to made using React, HTML, CSS, TS and JS. Styles with Chakra UI."
               link="https://github.com/lpsc1/AppDashGo"
             />
-          </SwiperSlide>
-          <SwiperSlide className="mySwiperSlide">
+          </SwiperSlide> */}
+          {/* <SwiperSlide className="mySwiperSlide">
             {" "}
             <SwiperBox
               img="dtmoney.png"
@@ -119,7 +149,7 @@ export function Projects() {
               subTitle="A Website that i made using React, HTML, CSS, TS and JS. Styles with Chakra UI."
               link="https://github.com/lpsc1/app-dt-money"
             />
-          </SwiperSlide>
+          </SwiperSlide> */}
         </Swiper>
       </Container>
     </Box>

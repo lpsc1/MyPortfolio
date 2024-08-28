@@ -31,15 +31,11 @@ export function About() {
           ></Img>
           <Description windowWidth={windowWidth}>
             <p style={{ marginBottom: 30 }}>
-              Hi! 👋 I'm Lucas, a 22-year-old.
+              Hi! 👋 I'm Lucas, 24-year-old.
               <br />
-              Fourth-year engineering student, studying
+              Software engineering student.
               <br />
-               control and automation engineering.
-              <br />
-              I am a passionate self-learner,
-              <br />
-              open source enthusiast, exploring and
+              I am a passionate self-learner, exploring and
               <br />
               building projects👨‍💻 using various
               <br />
@@ -47,9 +43,7 @@ export function About() {
               <br />
               developer well versed in HTML, CSS, 
               <br />
-              TypeScript, JavaScript and stand at a 
-              <br />
-              beginner-intermediate level of React.
+              TypeScript, JavaScript and React.
             </p>
           </Description>
         </Content>

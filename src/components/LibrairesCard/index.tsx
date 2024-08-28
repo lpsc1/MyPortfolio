@@ -8,6 +8,7 @@ export function LibrairesCard() {
       <Libraires title="ReactJS" icon="SiReact" />
       <Libraires title="NodeJS" icon="SiNodedotjs" />
       <Libraires title="React Native" icon="TbBrandReactNative" />
+      <Libraires title="Vue.JS" icon="FaVuejs" />
       <Libraires title="Styled Components" icon="SiStyledcomponents" />
       <Libraires title="Chakra UI" icon="SiChakraui" />
     </Container>

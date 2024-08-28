@@ -1,6 +1,12 @@
 import React from "react";
-import {SiReact, SiNodedotjs, SiStyledcomponents, SiChakraui } from "react-icons/si";
-import {TbBrandReactNative } from "react-icons/tb";
+import {
+  SiReact,
+  SiNodedotjs,
+  SiStyledcomponents,
+  SiChakraui,
+} from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
+import { FaVuejs } from "react-icons/fa";
 
 import { Container } from "./styles";
 
@@ -22,6 +28,8 @@ export function Libraires({ title, icon }: LibrairesProps) {
         <SiStyledcomponents className="icon" />
       ) : icon === "SiChakraui" ? (
         <SiChakraui className="icon" />
+      ) : icon === "FaVuejs" ? (
+        <FaVuejs className="icon" />
       ) : (
         ""
       )}
